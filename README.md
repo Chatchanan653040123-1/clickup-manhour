@@ -1,9 +1,3 @@
-# Clickup export
-
-This CLI tool allows you to export your work hours data from ClickUp, without needing to pay for premium.
-
-
-
 To install dependencies:
 
 ```bash
@@ -18,9 +12,5 @@ echo "API_KEY=pk_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" > .env
 To run:
 
 ```bash
-bun run index.ts
+bun run index.ts export --baht 3 --start 2024-09-28 --end 2024-10-28
 ```
-
-
-# Disclaimer
-This tool is not officially affiliated with ClickUp and is provided as-is. Use at your own risk.
