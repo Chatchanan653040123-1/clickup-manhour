@@ -41,6 +41,7 @@ export async function exportToCsV(
   // Process each group of tasks by space_id
   let totalBaht = 0;
   let spaceName = "";
+  let totalMinutes = 0;
   Object.entries(groupedTasks).forEach(([spaceId, tasks]) => {
     switch (spaceId) {
       case `"90181151609"`:
@@ -56,21 +57,22 @@ export async function exportToCsV(
         spaceName = "Unknown";
     }
     const content: string[][] = [
-      [`Space ID: ${spaceId}:${spaceName}`, "Task name", "Duration", "Baht"],
+      [`Space ID: ${spaceId}:${spaceName}`,",Time", ",Task name", ",Duration(minutes)", ",Baht"],
     ];
     let bahtSum = 0;
     tasks.forEach((task) => {
       content.push([
-        new Date(task.end * 1).toString(),
-        task.task.name+",",
-        getDuration(task.start, task.end, "minutes")+ " minutes = ",
+        ",",
+        new Date(task.end * 1).toString()+",",
+        task.task.name.replace(",", '')+",",
+        getDuration(task.start, task.end, "minutes")+ ",",
         (parseFloat(getDuration(task.start, task.end, "minutes")) * baht).toString() + " Baht",
       ]);
       bahtSum += parseFloat(getDuration(task.start, task.end, "minutes")) * baht;
     });
     totalBaht += bahtSum;
-    content.push(["Baht Sum",bahtSum.toString() , "", ""]);
-    content.push(["", "", "", ""]);
+    content.push([",","," , ",", "Baht Sum,", bahtSum.toString()]);
+    content.push(["","", "", "", ""]);
     data.push(content);
   });
 
@@ -79,7 +81,12 @@ export async function exportToCsV(
     ...table,
     ["", "", "", "", ""],
   ]);
-  const csvContent = flattenedData.map((row) => row.join("\t")).join("\n")+ "\nTotal "+totalBaht.toString()+" Baht";
-  fs.writeFileSync(path, csvContent);
+  const fs = require('fs');
+
+  // Your existing data processing
+  const csvContent = "\uFEFF" + flattenedData.map((row) => row.join("\t")).join("\n") + "\nTotal " + totalBaht.toString() + " Baht";
+  
+  // Write the file with UTF-8 encoding
+  fs.writeFileSync(path, csvContent, { encoding: 'utf8' });
   console.log(`File saved at ${path}`);
 }
