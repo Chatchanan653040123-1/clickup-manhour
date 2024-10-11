@@ -15,8 +15,6 @@ export async function exportToCsV(
     `https://api.clickup.com/api/v2/team/${teamId}/time_entries`
   );
   const tasksData = tasksResponse.data;
-  console.log(tasksData);
-
   const data: string[][][] = [];
 
   // Group tasks by space_id
@@ -41,7 +39,7 @@ export async function exportToCsV(
   // Process each group of tasks by space_id
   let totalBaht = 0;
   let spaceName = "";
-  let totalMinutes = 0;
+  let totalMinutes = 0; 
   Object.entries(groupedTasks).forEach(([spaceId, tasks]) => {
     switch (spaceId) {
       case `"90181151609"`:
@@ -60,6 +58,7 @@ export async function exportToCsV(
       [`Space ID: ${spaceId}:${spaceName}`,",Time", ",Task name", ",Duration(minutes)", ",Baht"],
     ];
     let bahtSum = 0;
+    let minuteSum = 0;
     tasks.forEach((task) => {
       content.push([
         ",",
@@ -69,10 +68,13 @@ export async function exportToCsV(
         (parseFloat(getDuration(task.start, task.end, "minutes")) * baht).toString() + " Baht",
       ]);
       bahtSum += parseFloat(getDuration(task.start, task.end, "minutes")) * baht;
+      minuteSum += parseFloat(getDuration(task.start, task.end, "minutes"));
+      console.log(minuteSum);
     });
     totalBaht += bahtSum;
+    totalMinutes += minuteSum;
     content.push([",","," , ",", "Baht Sum,", bahtSum.toString()]);
-    content.push(["","", "", "", ""]);
+    content.push([",",",", ",", "Minutes Sum,", minuteSum.toString()]);
     data.push(content);
   });
 
@@ -84,7 +86,7 @@ export async function exportToCsV(
   const fs = require('fs');
 
   // Your existing data processing
-  const csvContent = "\uFEFF" + flattenedData.map((row) => row.join("\t")).join("\n") + "\nTotal " + totalBaht.toString() + " Baht";
+  const csvContent = "\uFEFF" + flattenedData.map((row) => row.join("\t")).join("\n") + "\nTotal ," + totalBaht.toString() + ", Baht"+ "\n," + totalMinutes.toString() + " Minutes";
   
   // Write the file with UTF-8 encoding
   fs.writeFileSync(path, csvContent, { encoding: 'utf8' });

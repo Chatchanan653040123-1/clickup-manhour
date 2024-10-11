@@ -33,7 +33,7 @@
 ,	Thu Oct 10 2024 23:23:19 GMT+0700 (Indochina Time),	[DevOps] On prd,	200.65,	5016.25 Baht
 ,	Thu Oct 10 2024 23:56:18 GMT+0700 (Indochina Time),	[DevOps] On prd,	32.95,	823.7500000000001 Baht
 ,	,	,	Baht Sum,	68286
-				
+,	,	,	Minutes Sum,	2731.4399999999996
 				
 Space ID: "90181548832":KKU-DMS & TDX	,Time	,Task name	,Duration(minutes)	,Baht
 ,	Mon Sep 16 2024 10:43:58 GMT+0700 (Indochina Time),	[BE] map TDX data to DMS database,	1.53,	38.25 Baht
@@ -43,11 +43,12 @@ Space ID: "90181548832":KKU-DMS & TDX	,Time	,Task name	,Duration(minutes)	,Baht
 ,	Fri Oct 11 2024 01:56:17 GMT+0700 (Indochina Time),	[DEVOPS] tdx is on prd,	119.43,	2985.75 Baht
 ,	Fri Oct 11 2024 04:21:51 GMT+0700 (Indochina Time),	[BE] map TDX data to DMS database,	0.04,	1 Baht
 ,	,	,	Baht Sum,	9379.5
-				
+,	,	,	Minutes Sum,	375.18
 				
 Space ID: "90181151609":MaoMao	,Time	,Task name	,Duration(minutes)	,Baht
 ,	Thu Oct 03 2024 01:40:39 GMT+0700 (Indochina Time),	[BE] Friend and Party design and CRUD,	60,	1500 Baht
 ,	,	,	Baht Sum,	1500
+,	,	,	Minutes Sum,	60
 				
-				
-Total 79165.5 Baht
+Total ,79165.5, Baht
+,3166.6199999999994 Minutes
