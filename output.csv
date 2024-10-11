@@ -1,35 +1,35 @@
-﻿Space ID: "90181147772":KKU-SAC	,Time	,Task name	,Duration(minutes)	,Baht
-,	Sun Sep 29 2024 03:54:43 GMT+0700 (Indochina Time),	[BE] แก้ไขค้นหาข้อมูลไม่ได้ search แล้วข้อมูลที่ควรจะมี แต่ไม่ถูกส่งมา (เช็คทุกตารางที่มี search) และขอ paginate เส้น get /users/department Fix รอบ2,	7.27 minutes,	19.9925 Baht
-,	Sun Sep 29 2024 12:39:01 GMT+0700 (Indochina Time),	[BE] แก้ไขค้นหาข้อมูลไม่ได้ search แล้วข้อมูลที่ควรจะมี แต่ไม่ถูกส่งมา (เช็คทุกตารางที่มี search) และขอ paginate เส้น get /users/department Fix รอบ2,	39.73 minutes,	109.2575 Baht
-,	Sun Sep 29 2024 14:54:35 GMT+0700 (Indochina Time),	[BE] Redis storage,	60 minutes,	165 Baht
-,	Sun Sep 29 2024 16:11:15 GMT+0700 (Indochina Time),	[BE] Redis storage,	76.63 minutes,	210.7325 Baht
-,	Sun Sep 29 2024 23:30:41 GMT+0700 (Indochina Time),	[BE] 1. เวลา updated_at ลืม +7 [ช้าง] 7. เช็คแจ้งเตือนเมล เข้าทุกคนที่เป็นเจ้าหน้าที่ (ต้องเข้าเมลเจ้าหน้าที่ที่ดูแลเอกสารนั้นๆ) [ช้าง],	10 minutes,	27.5 Baht
-,	Mon Sep 30 2024 00:43:04 GMT+0700 (Indochina Time),	[BE] 1. เวลา updated_at ลืม +7 [ช้าง] 7. เช็คแจ้งเตือนเมล เข้าทุกคนที่เป็นเจ้าหน้าที่ (ต้องเข้าเมลเจ้าหน้าที่ที่ดูแลเอกสารนั้นๆ) [ช้าง],	72.37 minutes,	199.0175 Baht
-,	Thu Oct 03 2024 01:38:36 GMT+0700 (Indochina Time),	[BE] แก้งาน email ส่งกองพัฒไม่ได้ (Flow ไม่ถูกต้อง) และไฟล์พร้อมลายเซ็น อัพโหลดทับกันไม่ได้ และแก้บัคหลายๆอย่าง Deadline 10/3/2024,	430.78 minutes,	1184.645 Baht
-,	Sun Oct 06 2024 05:50:40 GMT+0700 (Indochina Time),	[DevOps] On prd,	300 minutes,	825 Baht
-,	Sun Oct 06 2024 06:51:14 GMT+0700 (Indochina Time),	[DevOps] On prd,	60.53 minutes,	166.4575 Baht
-,	Sun Oct 06 2024 08:26:05 GMT+0700 (Indochina Time),	[DevOps] On prd,	58.34 minutes,	160.435 Baht
-,	Wed Oct 09 2024 01:26:06 GMT+0700 (Indochina Time),	[DevOps] On prd,	63.74 minutes,	175.285 Baht
-,	Wed Oct 09 2024 02:50:32 GMT+0700 (Indochina Time),	[DevOps] On prd,	84.35 minutes,	231.96249999999998 Baht
-,	Wed Oct 09 2024 03:01:14 GMT+0700 (Indochina Time),	[DevOps] On prd,	10.39 minutes,	28.5725 Baht
-,	Thu Oct 10 2024 20:02:39 GMT+0700 (Indochina Time),	[DevOps] On prd,	126.54 minutes,	347.985 Baht
-,	Thu Oct 10 2024 23:23:19 GMT+0700 (Indochina Time),	[DevOps] On prd,	200.65 minutes,	551.7875 Baht
-,	Thu Oct 10 2024 23:56:18 GMT+0700 (Indochina Time),	[DevOps] On prd,	32.95 minutes,	90.61250000000001 Baht
-,	,	,	Baht Sum,	4494.2425
-,	,	,	Minutes Sum,	1634.27
-				
-Space ID: "90181548832":KKU-DMS & TDX	,Time	,Task name	,Duration(minutes)	,Baht
-,	Sun Sep 29 2024 23:11:53 GMT+0700 (Indochina Time),	[BE] save to db on create doc tdx,	147.26 minutes,	404.965 Baht
-,	Tue Oct 08 2024 23:10:20 GMT+0700 (Indochina Time),	[BE] fix: cannot save file on tdx and map to dms database,	76.59 minutes,	210.6225 Baht
-,	Fri Oct 11 2024 01:56:17 GMT+0700 (Indochina Time),	[DEVOPS] tdx is on prd,	119.43 minutes,	328.4325 Baht
-,	Fri Oct 11 2024 04:21:51 GMT+0700 (Indochina Time),	[BE] map TDX data to DMS database,	0.04 minutes,	0.11 Baht
-,	,	,	Baht Sum,	944.13
-,	,	,	Minutes Sum,	343.32
-				
-Space ID: "90181151609":MaoMao	,Time	,Task name	,Duration(minutes)	,Baht
-,	Thu Oct 03 2024 01:40:39 GMT+0700 (Indochina Time),	[BE] Friend and Party design and CRUD,	60 minutes,	165 Baht
-,	,	,	Baht Sum,	165
-,	,	,	Minutes Sum,	60
-				
+﻿Space ID: "90181147772":KKU-SAC	,Date	,Time	,Task name	,Duration(minutes)	,Baht
+,	29/09/24, 03:54,	[BE] แก้ไขค้นหาข้อมูลไม่ได้ search แล้วข้อมูลที่ควรจะมี แต่ไม่ถูกส่งมา (เช็คทุกตารางที่มี search) และขอ paginate เส้น get /users/department Fix รอบ2,	7.27 minutes,	19.9925 Baht
+,	29/09/24, 12:39,	[BE] แก้ไขค้นหาข้อมูลไม่ได้ search แล้วข้อมูลที่ควรจะมี แต่ไม่ถูกส่งมา (เช็คทุกตารางที่มี search) และขอ paginate เส้น get /users/department Fix รอบ2,	39.73 minutes,	109.2575 Baht
+,	29/09/24, 14:54,	[BE] Redis storage,	60 minutes,	165 Baht
+,	29/09/24, 16:11,	[BE] Redis storage,	76.63 minutes,	210.7325 Baht
+,	29/09/24, 23:30,	[BE] 1. เวลา updated_at ลืม +7 [ช้าง] 7. เช็คแจ้งเตือนเมล เข้าทุกคนที่เป็นเจ้าหน้าที่ (ต้องเข้าเมลเจ้าหน้าที่ที่ดูแลเอกสารนั้นๆ) [ช้าง],	10 minutes,	27.5 Baht
+,	30/09/24, 00:43,	[BE] 1. เวลา updated_at ลืม +7 [ช้าง] 7. เช็คแจ้งเตือนเมล เข้าทุกคนที่เป็นเจ้าหน้าที่ (ต้องเข้าเมลเจ้าหน้าที่ที่ดูแลเอกสารนั้นๆ) [ช้าง],	72.37 minutes,	199.0175 Baht
+,	03/10/24, 01:38,	[BE] แก้งาน email ส่งกองพัฒไม่ได้ (Flow ไม่ถูกต้อง) และไฟล์พร้อมลายเซ็น อัพโหลดทับกันไม่ได้ และแก้บัคหลายๆอย่าง Deadline 10/3/2024,	430.78 minutes,	1184.645 Baht
+,	06/10/24, 05:50,	[DevOps] On prd,	300 minutes,	825 Baht
+,	06/10/24, 06:51,	[DevOps] On prd,	60.53 minutes,	166.4575 Baht
+,	06/10/24, 08:26,	[DevOps] On prd,	58.34 minutes,	160.435 Baht
+,	09/10/24, 01:26,	[DevOps] On prd,	63.74 minutes,	175.285 Baht
+,	09/10/24, 02:50,	[DevOps] On prd,	84.35 minutes,	231.96249999999998 Baht
+,	09/10/24, 03:01,	[DevOps] On prd,	10.39 minutes,	28.5725 Baht
+,	10/10/24, 20:02,	[DevOps] On prd,	126.54 minutes,	347.985 Baht
+,	10/10/24, 23:23,	[DevOps] On prd,	200.65 minutes,	551.7875 Baht
+,	10/10/24, 23:56,	[DevOps] On prd,	32.95 minutes,	90.61250000000001 Baht
+,	,	,	,	Baht Sum,	4494.2425
+,	,	,	,	Minutes Sum,	1634.27
+					
+Space ID: "90181548832":KKU-DMS & TDX	,Date	,Time	,Task name	,Duration(minutes)	,Baht
+,	29/09/24, 23:11,	[BE] save to db on create doc tdx,	147.26 minutes,	404.965 Baht
+,	08/10/24, 23:10,	[BE] fix: cannot save file on tdx and map to dms database,	76.59 minutes,	210.6225 Baht
+,	11/10/24, 01:56,	[DEVOPS] tdx is on prd,	119.43 minutes,	328.4325 Baht
+,	11/10/24, 04:21,	[BE] map TDX data to DMS database,	0.04 minutes,	0.11 Baht
+,	,	,	,	Baht Sum,	944.13
+,	,	,	,	Minutes Sum,	343.32
+					
+Space ID: "90181151609":MaoMao	,Date	,Time	,Task name	,Duration(minutes)	,Baht
+,	03/10/24, 01:40,	[BE] Friend and Party design and CRUD,	60 minutes,	165 Baht
+,	,	,	,	Baht Sum,	165
+,	,	,	,	Minutes Sum,	60
+					
 Total ,5603.3725, Baht
 ,2037.59 Minutes

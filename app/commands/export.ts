@@ -55,16 +55,22 @@ export async function exportToCsV(
         spaceName = "Unknown";
     }
     const content: string[][] = [
-      [`Space ID: ${spaceId}:${spaceName}`,",Time", ",Task name", ",Duration(minutes)", ",Baht"],
+      [`Space ID: ${spaceId}:${spaceName}`,",Date",",Time", ",Task name", ",Duration(minutes)", ",Baht"],
     ];
     let bahtSum = 0;
     let minuteSum = 0;
     tasks.forEach((task) => {
       content.push([
         ",",
-        new Date(task.end * 1).toString()+",",
-        task.task.name.replace(",", '')+",",
-        getDuration(task.start, task.end, "minutes")+ " minutes,",
+        new Date(task.end * 1).toLocaleString("en-GB", {
+          day: "2-digit",
+          month: "2-digit",
+          year: "2-digit",
+          hour: "2-digit",
+          minute: "2-digit",
+        }) + ",",
+        task.task.name.replace(",", '') + ",",
+        getDuration(task.start, task.end, "minutes") + " minutes,",
         (parseFloat(getDuration(task.start, task.end, "minutes")) * baht).toString() + " Baht",
       ]);
       bahtSum += parseFloat(getDuration(task.start, task.end, "minutes")) * baht;
@@ -73,15 +79,15 @@ export async function exportToCsV(
     });
     totalBaht += bahtSum;
     totalMinutes += minuteSum;
-    content.push([",","," , ",", "Baht Sum,", bahtSum.toString()]);
-    content.push([",",",", ",", "Minutes Sum,", minuteSum.toString()]);
+    content.push([",",",","," , ",", "Baht Sum,", bahtSum.toString()]);
+    content.push([",",",",",", ",", "Minutes Sum,", minuteSum.toString()]);
     data.push(content);
   });
 
   // Flatten the data and write to CSV
   const flattenedData: string[][] = data.flatMap((table) => [
     ...table,
-    ["", "", "", "", ""],
+    ["","", "", "", "", ""],
   ]);
   const fs = require('fs');
 
