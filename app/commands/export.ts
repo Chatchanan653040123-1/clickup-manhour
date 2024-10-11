@@ -64,7 +64,7 @@ export async function exportToCsV(
         ",",
         new Date(task.end * 1).toString()+",",
         task.task.name.replace(",", '')+",",
-        getDuration(task.start, task.end, "minutes")+ ",",
+        getDuration(task.start, task.end, "minutes")+ " minutes,",
         (parseFloat(getDuration(task.start, task.end, "minutes")) * baht).toString() + " Baht",
       ]);
       bahtSum += parseFloat(getDuration(task.start, task.end, "minutes")) * baht;

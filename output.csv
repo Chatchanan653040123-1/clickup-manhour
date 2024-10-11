@@ -1,54 +1,35 @@
 ﻿Space ID: "90181147772":KKU-SAC	,Time	,Task name	,Duration(minutes)	,Baht
-,	Wed Sep 11 2024 12:01:37 GMT+0700 (Indochina Time),	[BE] Get all departments and update role,	67.16,	1679 Baht
-,	Sun Sep 15 2024 14:25:03 GMT+0700 (Indochina Time),	[BE] อยากให้คนที่เป็น admin เห็นข้อมูลของทุก role และ department,	24.98,	624.5 Baht
-,	Sun Sep 15 2024 14:25:18 GMT+0700 (Indochina Time),	[BE] อยากให้คนที่เป็น admin เห็นข้อมูลของทุก role และ department,	6,	150 Baht
-,	Sun Sep 15 2024 16:54:30 GMT+0700 (Indochina Time),	[BE]  เส้น role-department ขอ doctype[] ด้วยได้ปะและใน db มี doc_type_id แต่ใน get/roles/me มันไม่มีเฉย,	149.01,	3725.25 Baht
-,	Sun Sep 15 2024 22:59:02 GMT+0700 (Indochina Time),	[BE] ดู Petitions ที่อยู่ Tags และ Department เดียวกัน,	40.01,	1000.25 Baht
-,	Mon Sep 16 2024 02:29:54 GMT+0700 (Indochina Time),	[BE] ดู users ทั้งหมดในแต่ละ departments และ ส่งเมลล์ไปหาผู้ร้องขอเอกสารเมื่อได้รับการอนุมัติ and fix a lot of bug on 9/16/2024 (Deadline!!) ,	210.08,	5252 Baht
-,	Tue Sep 17 2024 01:04:28 GMT+0700 (Indochina Time),	[BE] เก็บไฟล์จากนักศึกษาหลังจากนั้น เอาไฟล์มาเซ็นแล้วอัพโหลดขึ้นไปใหม่,	95.44,	2386 Baht
-,	Tue Sep 17 2024 06:06:29 GMT+0700 (Indochina Time),	[BE] เอกสารภายนอก (Flow เต็มๆในคอมเม้นท์) และ updated_at ใน petitions struct,	125.82,	3145.5 Baht
-,	Tue Sep 17 2024 06:17:21 GMT+0700 (Indochina Time),	[BE] add paginate and search on tag,	10.66,	266.5 Baht
-,	Tue Sep 17 2024 06:24:36 GMT+0700 (Indochina Time),	[BE] create department,	7.15,	178.75 Baht
-,	Tue Sep 17 2024 19:43:22 GMT+0700 (Indochina Time),	[BE] fix unsupport datatype on tag request,	20.34,	508.5 Baht
-,	Sun Sep 22 2024 15:40:11 GMT+0700 (Indochina Time),	[BE] Delete user cascade,	4.04,	101 Baht
-,	Sun Sep 22 2024 16:31:54 GMT+0700 (Indochina Time),	[BE] paginate  search และ หน้ารายงาน filter ตาม เอกสารอิเล็กทรอนิกส์และกระดาษ,	51.18,	1279.5 Baht
-,	Sun Sep 22 2024 23:13:52 GMT+0700 (Indochina Time),	[BE] sort by DESC all of path,	2.26,	56.49999999999999 Baht
-,	Fri Sep 27 2024 17:40:21 GMT+0700 (Indochina Time),	[BE] แก้ไขค้นหาข้อมูลไม่ได้ search แล้วข้อมูลที่ควรจะมี แต่ไม่ถูกส่งมา และ sort หน่วยงานในหน้า ตั้งค่าหน่วยงาน,	27.05,	676.25 Baht
-,	Fri Sep 27 2024 19:15:12 GMT+0700 (Indochina Time),	[BE] ทำให้ตารางแสดงเอกสารทุกหน้า แสดงเอกสารกระดาษกับอิเล็กทรอนิกส์ได้ และ ขอ paginate เส้น get /users/department,	93.81,	2345.25 Baht
-,	Fri Sep 27 2024 21:58:21 GMT+0700 (Indochina Time),	[BE] ส่ง email หาผู้ใช้ที่อยู่ในหน่วยงานที่ดูแลเอกสารแจ้งเตือนเมื่อมีคำร้องเพิ่มเข้ามา,	162.18,	4054.5 Baht
-,	Sun Sep 29 2024 03:54:43 GMT+0700 (Indochina Time),	[BE] แก้ไขค้นหาข้อมูลไม่ได้ search แล้วข้อมูลที่ควรจะมี แต่ไม่ถูกส่งมา (เช็คทุกตารางที่มี search) และขอ paginate เส้น get /users/department Fix รอบ2,	7.27,	181.75 Baht
-,	Sun Sep 29 2024 12:39:01 GMT+0700 (Indochina Time),	[BE] แก้ไขค้นหาข้อมูลไม่ได้ search แล้วข้อมูลที่ควรจะมี แต่ไม่ถูกส่งมา (เช็คทุกตารางที่มี search) และขอ paginate เส้น get /users/department Fix รอบ2,	39.73,	993.2499999999999 Baht
-,	Sun Sep 29 2024 14:54:35 GMT+0700 (Indochina Time),	[BE] Redis storage,	60,	1500 Baht
-,	Sun Sep 29 2024 16:11:15 GMT+0700 (Indochina Time),	[BE] Redis storage,	76.63,	1915.75 Baht
-,	Sun Sep 29 2024 23:30:41 GMT+0700 (Indochina Time),	[BE] 1. เวลา updated_at ลืม +7 [ช้าง] 7. เช็คแจ้งเตือนเมล เข้าทุกคนที่เป็นเจ้าหน้าที่ (ต้องเข้าเมลเจ้าหน้าที่ที่ดูแลเอกสารนั้นๆ) [ช้าง],	10,	250 Baht
-,	Mon Sep 30 2024 00:43:04 GMT+0700 (Indochina Time),	[BE] 1. เวลา updated_at ลืม +7 [ช้าง] 7. เช็คแจ้งเตือนเมล เข้าทุกคนที่เป็นเจ้าหน้าที่ (ต้องเข้าเมลเจ้าหน้าที่ที่ดูแลเอกสารนั้นๆ) [ช้าง],	72.37,	1809.25 Baht
-,	Thu Oct 03 2024 01:38:36 GMT+0700 (Indochina Time),	[BE] แก้งาน email ส่งกองพัฒไม่ได้ (Flow ไม่ถูกต้อง) และไฟล์พร้อมลายเซ็น อัพโหลดทับกันไม่ได้ และแก้บัคหลายๆอย่าง Deadline 10/3/2024,	430.78,	10769.5 Baht
-,	Sun Oct 06 2024 05:50:40 GMT+0700 (Indochina Time),	[DevOps] On prd,	300,	7500 Baht
-,	Sun Oct 06 2024 06:51:14 GMT+0700 (Indochina Time),	[DevOps] On prd,	60.53,	1513.25 Baht
-,	Sun Oct 06 2024 08:26:05 GMT+0700 (Indochina Time),	[DevOps] On prd,	58.34,	1458.5 Baht
-,	Wed Oct 09 2024 01:26:06 GMT+0700 (Indochina Time),	[DevOps] On prd,	63.74,	1593.5 Baht
-,	Wed Oct 09 2024 02:50:32 GMT+0700 (Indochina Time),	[DevOps] On prd,	84.35,	2108.75 Baht
-,	Wed Oct 09 2024 03:01:14 GMT+0700 (Indochina Time),	[DevOps] On prd,	10.39,	259.75 Baht
-,	Thu Oct 10 2024 20:02:39 GMT+0700 (Indochina Time),	[DevOps] On prd,	126.54,	3163.5 Baht
-,	Thu Oct 10 2024 23:23:19 GMT+0700 (Indochina Time),	[DevOps] On prd,	200.65,	5016.25 Baht
-,	Thu Oct 10 2024 23:56:18 GMT+0700 (Indochina Time),	[DevOps] On prd,	32.95,	823.7500000000001 Baht
-,	,	,	Baht Sum,	68286
-,	,	,	Minutes Sum,	2731.4399999999996
+,	Sun Sep 29 2024 03:54:43 GMT+0700 (Indochina Time),	[BE] แก้ไขค้นหาข้อมูลไม่ได้ search แล้วข้อมูลที่ควรจะมี แต่ไม่ถูกส่งมา (เช็คทุกตารางที่มี search) และขอ paginate เส้น get /users/department Fix รอบ2,	7.27 minutes,	19.9925 Baht
+,	Sun Sep 29 2024 12:39:01 GMT+0700 (Indochina Time),	[BE] แก้ไขค้นหาข้อมูลไม่ได้ search แล้วข้อมูลที่ควรจะมี แต่ไม่ถูกส่งมา (เช็คทุกตารางที่มี search) และขอ paginate เส้น get /users/department Fix รอบ2,	39.73 minutes,	109.2575 Baht
+,	Sun Sep 29 2024 14:54:35 GMT+0700 (Indochina Time),	[BE] Redis storage,	60 minutes,	165 Baht
+,	Sun Sep 29 2024 16:11:15 GMT+0700 (Indochina Time),	[BE] Redis storage,	76.63 minutes,	210.7325 Baht
+,	Sun Sep 29 2024 23:30:41 GMT+0700 (Indochina Time),	[BE] 1. เวลา updated_at ลืม +7 [ช้าง] 7. เช็คแจ้งเตือนเมล เข้าทุกคนที่เป็นเจ้าหน้าที่ (ต้องเข้าเมลเจ้าหน้าที่ที่ดูแลเอกสารนั้นๆ) [ช้าง],	10 minutes,	27.5 Baht
+,	Mon Sep 30 2024 00:43:04 GMT+0700 (Indochina Time),	[BE] 1. เวลา updated_at ลืม +7 [ช้าง] 7. เช็คแจ้งเตือนเมล เข้าทุกคนที่เป็นเจ้าหน้าที่ (ต้องเข้าเมลเจ้าหน้าที่ที่ดูแลเอกสารนั้นๆ) [ช้าง],	72.37 minutes,	199.0175 Baht
+,	Thu Oct 03 2024 01:38:36 GMT+0700 (Indochina Time),	[BE] แก้งาน email ส่งกองพัฒไม่ได้ (Flow ไม่ถูกต้อง) และไฟล์พร้อมลายเซ็น อัพโหลดทับกันไม่ได้ และแก้บัคหลายๆอย่าง Deadline 10/3/2024,	430.78 minutes,	1184.645 Baht
+,	Sun Oct 06 2024 05:50:40 GMT+0700 (Indochina Time),	[DevOps] On prd,	300 minutes,	825 Baht
+,	Sun Oct 06 2024 06:51:14 GMT+0700 (Indochina Time),	[DevOps] On prd,	60.53 minutes,	166.4575 Baht
+,	Sun Oct 06 2024 08:26:05 GMT+0700 (Indochina Time),	[DevOps] On prd,	58.34 minutes,	160.435 Baht
+,	Wed Oct 09 2024 01:26:06 GMT+0700 (Indochina Time),	[DevOps] On prd,	63.74 minutes,	175.285 Baht
+,	Wed Oct 09 2024 02:50:32 GMT+0700 (Indochina Time),	[DevOps] On prd,	84.35 minutes,	231.96249999999998 Baht
+,	Wed Oct 09 2024 03:01:14 GMT+0700 (Indochina Time),	[DevOps] On prd,	10.39 minutes,	28.5725 Baht
+,	Thu Oct 10 2024 20:02:39 GMT+0700 (Indochina Time),	[DevOps] On prd,	126.54 minutes,	347.985 Baht
+,	Thu Oct 10 2024 23:23:19 GMT+0700 (Indochina Time),	[DevOps] On prd,	200.65 minutes,	551.7875 Baht
+,	Thu Oct 10 2024 23:56:18 GMT+0700 (Indochina Time),	[DevOps] On prd,	32.95 minutes,	90.61250000000001 Baht
+,	,	,	Baht Sum,	4494.2425
+,	,	,	Minutes Sum,	1634.27
 				
 Space ID: "90181548832":KKU-DMS & TDX	,Time	,Task name	,Duration(minutes)	,Baht
-,	Mon Sep 16 2024 10:43:58 GMT+0700 (Indochina Time),	[BE] map TDX data to DMS database,	1.53,	38.25 Baht
-,	Sun Sep 22 2024 23:00:01 GMT+0700 (Indochina Time),	[BE] map TDX data to DMS database,	30.33,	758.25 Baht
-,	Sun Sep 29 2024 23:11:53 GMT+0700 (Indochina Time),	[BE] save to db on create doc tdx,	147.26,	3681.5 Baht
-,	Tue Oct 08 2024 23:10:20 GMT+0700 (Indochina Time),	[BE] fix: cannot save file on tdx and map to dms database,	76.59,	1914.75 Baht
-,	Fri Oct 11 2024 01:56:17 GMT+0700 (Indochina Time),	[DEVOPS] tdx is on prd,	119.43,	2985.75 Baht
-,	Fri Oct 11 2024 04:21:51 GMT+0700 (Indochina Time),	[BE] map TDX data to DMS database,	0.04,	1 Baht
-,	,	,	Baht Sum,	9379.5
-,	,	,	Minutes Sum,	375.18
+,	Sun Sep 29 2024 23:11:53 GMT+0700 (Indochina Time),	[BE] save to db on create doc tdx,	147.26 minutes,	404.965 Baht
+,	Tue Oct 08 2024 23:10:20 GMT+0700 (Indochina Time),	[BE] fix: cannot save file on tdx and map to dms database,	76.59 minutes,	210.6225 Baht
+,	Fri Oct 11 2024 01:56:17 GMT+0700 (Indochina Time),	[DEVOPS] tdx is on prd,	119.43 minutes,	328.4325 Baht
+,	Fri Oct 11 2024 04:21:51 GMT+0700 (Indochina Time),	[BE] map TDX data to DMS database,	0.04 minutes,	0.11 Baht
+,	,	,	Baht Sum,	944.13
+,	,	,	Minutes Sum,	343.32
 				
 Space ID: "90181151609":MaoMao	,Time	,Task name	,Duration(minutes)	,Baht
-,	Thu Oct 03 2024 01:40:39 GMT+0700 (Indochina Time),	[BE] Friend and Party design and CRUD,	60,	1500 Baht
-,	,	,	Baht Sum,	1500
+,	Thu Oct 03 2024 01:40:39 GMT+0700 (Indochina Time),	[BE] Friend and Party design and CRUD,	60 minutes,	165 Baht
+,	,	,	Baht Sum,	165
 ,	,	,	Minutes Sum,	60
 				
-Total ,79165.5, Baht
-,3166.6199999999994 Minutes
+Total ,5603.3725, Baht
+,2037.59 Minutes
