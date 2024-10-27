@@ -1,0 +1,1 @@
+bun run index.ts export --baht 3.5 --start 2024-09-27 --end 2024-10-29

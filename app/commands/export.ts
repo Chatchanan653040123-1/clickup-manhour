@@ -51,6 +51,9 @@ export async function exportToCsV(
       case `"90181548832"`:
         spaceName = "KKU-DMS & TDX";
         break;
+      case `"90182134544"`:
+        spaceName = "Finizer";
+        break;
       default:
         spaceName = "Unknown";
     }
